@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanshu | Developer Portfolio</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Use Inter font for a modern look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
         /* Apply Inter font globally and smooth scrolling */
@@ -39,15 +37,12 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-[#0d1117]/95 backdrop-blur-sm shadow-lg border-b border-[#30363d] p-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <!-- Logo/Name -->
             <a href="#hero" class="text-2xl font-bold text-[#58a6ff] hover:text-white transition duration-300">
                 Priyanshu
             </a>
             
-            <!-- Desktop Links -->
             <div class="hidden md:flex space-x-8 text-lg">
                 <a href="#about" class="glow-link">About</a>
                 <a href="#skills" class="glow-link">Skills</a>
@@ -55,17 +50,13 @@
                 <a href="#contact" class="glow-link">Contact</a>
             </div>
 
-            <!-- Mobile Menu Button (Hamburger) - Not fully functional without JS, but visually present -->
             <button class="md:hidden text-2xl text-white focus:outline-none">
-                &#9776; <!-- Hamburger Icon -->
-            </button>
+                &#9776; </button>
         </div>
     </nav>
 
-    <!-- Main Content Container -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        <!-- 1. Hero Section -->
         <section id="hero" class="min-h-[80vh] flex items-center justify-center text-center pt-24 pb-16">
             <div class="space-y-6">
                 <p class="text-xl sm:text-2xl font-medium text-[#58a6ff]">Hello, I'm</p>
@@ -76,6 +67,13 @@
                     A Full Stack Developer & <span class="font-semibold text-white">CI/CD Enthusiast</span>
                 </h2>
                 <div class="pt-8 flex justify-center space-x-4">
+                    
+                    <a href="https://[your-storage-account].blob.core.windows.net/[your-container]/Priyanshu_CV.pdf"
+                       class="px-6 py-3 bg-transparent border border-gray-400 text-gray-400 font-semibold rounded-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"
+                       download="Priyanshu_CV.pdf" target="_blank">
+                        Download CV
+                    </a>
+                    
                     <a href="#projects" class="px-6 py-3 bg-[#58a6ff] text-[#0d1117] font-semibold rounded-lg shadow-lg hover:bg-white transition duration-300 transform hover:scale-105">
                         View Projects
                     </a>
@@ -85,21 +83,18 @@
                 </div>
             </div>
         </section>
-
-        <!-- 2. About Me Section -->
+        
         <section id="about" class="py-20 border-t border-[#30363d]">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-10">
-                <!-- Image Placeholder -->
                 <div class="w-full md:w-1/3 flex justify-center">
                     <img src="https://placehold.co/300x300/161b22/c9d1d9?text=Priyanshu" 
-                         alt="Priyanshu Profile Picture Placeholder"
-                         class="rounded-full border-4 border-[#58a6ff] object-cover w-64 h-64 shadow-2xl">
+                            alt="Priyanshu Profile Picture Placeholder"
+                            class="rounded-full border-4 border-[#58a6ff] object-cover w-64 h-64 shadow-2xl">
                 </div>
-                <!-- Text Content -->
                 <div class="w-full md:w-2/3 text-lg space-y-6">
                     <p>
-                        I am Priyanshu, a passionate Full Stack Developer with expertise in building robust and scalable web applications. My journey in technology is driven by a curiosity for how things work and a dedication to creating clean, efficient, and maintainable code.
+                        I am Priyanshu, a passionate **Full Stack Developer** with expertise in building robust and scalable web applications. My journey in technology is driven by a curiosity for how things work and a dedication to creating clean, efficient, and maintainable code.
                     </p>
                     <p>
                         My background includes hands-on experience with modern JavaScript frameworks like **React** and **Node.js**, coupled with strong proficiency in database management and cloud infrastructure. I thrive in environments where continuous learning and collaboration are valued.
@@ -111,12 +106,10 @@
             </div>
         </section>
 
-        <!-- 3. Skills Section -->
         <section id="skills" class="py-20 border-t border-[#30363d]">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">Technical Skills</h2>
             
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-                <!-- Skill Card Template -->
                 <div class="card p-6 rounded-xl text-center">
                     <div class="text-4xl mb-2">💻</div>
                     <p class="font-semibold text-white">JavaScript</p>
@@ -156,13 +149,11 @@
             </div>
         </section>
 
-        <!-- 4. Projects Section -->
         <section id="projects" class="py-20 border-t border-[#30363d]">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">Featured Projects</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project Card 1: CI/CD Pipeline Dashboard -->
                 <div class="card rounded-xl overflow-hidden p-6 space-y-4">
                     <h3 class="text-2xl font-bold text-[#58a6ff]">Pipeline Dashboard</h3>
                     <p class="text-gray-400">
@@ -175,7 +166,6 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2: E-commerce Platform -->
                 <div class="card rounded-xl overflow-hidden p-6 space-y-4">
                     <h3 class="text-2xl font-bold text-[#58a6ff]">Modern E-commerce App</h3>
                     <p class="text-gray-400">
@@ -188,7 +178,6 @@
                     </div>
                 </div>
                 
-                <!-- Project Card 3: Task Management API -->
                 <div class="card rounded-xl overflow-hidden p-6 space-y-4">
                     <h3 class="text-2xl font-bold text-[#58a6ff]">Microservice Task API</h3>
                     <p class="text-gray-400">
@@ -204,7 +193,6 @@
             </div>
         </section>
 
-        <!-- 5. Contact Section -->
         <section id="contact" class="py-20 border-t border-[#30363d]">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">Contact Priyanshu</h2>
             
@@ -217,17 +205,17 @@
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
                         <input type="text" id="name" name="name" required
-                               class="w-full p-3 rounded-lg bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] focus:ring focus:ring-[#58a6ff]/50 transition duration-200 text-white">
+                                class="w-full p-3 rounded-lg bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] focus:ring focus:ring-[#58a6ff]/50 transition duration-200 text-white">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
                         <input type="email" id="email" name="email" required
-                               class="w-full p-3 rounded-lg bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] focus:ring focus:ring-[#58a6ff]/50 transition duration-200 text-white">
+                                class="w-full p-3 rounded-lg bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] focus:ring focus:ring-[#58a6ff]/50 transition duration-200 text-white">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
                         <textarea id="message" name="message" rows="4" required
-                                  class="w-full p-3 rounded-lg bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] focus:ring focus:ring-[#58a6ff]/50 transition duration-200 text-white"></textarea>
+                                    class="w-full p-3 rounded-lg bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] focus:ring focus:ring-[#58a6ff]/50 transition duration-200 text-white"></textarea>
                     </div>
                     <button type="submit"
                             class="w-full py-3 bg-[#58a6ff] text-[#0d1117] font-semibold rounded-lg shadow-xl hover:bg-white transition duration-300 transform hover:scale-[1.01]">
@@ -235,7 +223,6 @@
                     </button>
                 </form>
 
-                <!-- Custom Message Box (instead of alert) -->
                 <div id="message-status" class="hidden mt-4 p-4 rounded-lg bg-green-900/50 text-green-300 border border-green-700/50 text-center">
                     Thank you! Your message has been simulated. Priyanshu will get back to you soon.
                 </div>
@@ -244,18 +231,15 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="mt-12 py-6 border-t border-[#30363d] text-center text-sm text-gray-500 bg-[#0d1117]">
         <p>&copy; 2025 Priyanshu. All rights reserved. | Built with Tailwind CSS.</p>
         <div class="mt-2 space-x-4">
-            <!-- Social Media Icons (Use simple text links as placeholder) -->
             <a href="#" class="hover:text-[#58a6ff] transition">GitHub</a>
             <a href="#" class="hover:text-[#58a6ff] transition">LinkedIn</a>
             <a href="mailto:priyanshu@example.com" class="hover:text-[#58a6ff] transition">Email</a>
         </div>
     </footer>
 
-    <!-- JavaScript for form submission message -->
     <script>
         function showMessage() {
             const statusDiv = document.getElementById('message-status');
